@@ -51,4 +51,5 @@ export const Post = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: "./content",
   documentTypes: [Post, Page],
+  contentDirExclude: ['.obsidian', 'assets', 'templates'],
 })
